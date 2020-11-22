@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en" id="restricted">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style_exampage.css">
+    <link rel="stylesheet" href="lib/bootstrap.min.css">
+    <link rel="stylesheet" href="lib\fontawesome-free-5.15.1-web\css\all.css">
+	<title>Exam</title>
+</head>
+<body >
+	<div >
+        <div class="container-fluid">
+            <button type="button" class="btn btn-danger loginbtn" id="logoutbtn" onclick="{location.href='index.html'}">Log Out  <i class="fas fa-sign-in-alt"></i></button>
+                <img src="images/tulogo.png" alt="" class="tulogo" style="width:12%">
+                 <h1 style="display:inline;color: white;">Exam Panel</h1>
+                         <!-- The text field -->
+            <span style="color: white;">Exam ID:</span>
+            <input type="text" value="id" id="iddisplay"  disabled style="padding-bottom: 5px;">	
+            </div>
+            <div class="container">
+                <div class="alert alert-danger" role="alert" id="warn">
+                    Please donot close this tab while Filling Questions.Your progress will be lost and instead a void exam will be Submitted.
+                  </div>
+                  <div class="alert alert-warning" role="alert" id="warn">
+                    Please remain within the frame of webcam.Failure to detect face on several occasions may result in disqualification from exam. .
+                  </div>
+                  <div class="alert alert-danger notshown" role="alert" id="leavemsg">
+                  </div>
+            </div>
+            <div class="container-fluid quest">
+        
+                <div class=" row">
+                    <div class="col-8 compartment">
+                        <div class="row">
+                            <div class="col">
+                                <span>Q.N.1</span>
+                                <textarea disabled class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Question Text"></textarea>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <span>A.</span>
+                                <input disabled type="text" name="optA" id="optA" class="form-control" placeholder="Option A" >
+                            </div>
+                            <div class="col-6">
+                                <span>B.</span>
+                                <input disabled type="text" name="optB" id="optB" class="form-control" placeholder="Option B" >
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <span>C.</span>
+                                <input disabled type="text" name="optC" id="optC" class="form-control" placeholder="Option C" >
+                            </div>
+                            <div class="col-6">
+                                <span>D.</span>
+                                <input disabled type="text" name="optD" id="optD" class="form-control" placeholder="Option D" >
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <span>Your Answer:</span>
+                                <select name="optCorrect" id="optCorrect" class="form-control">
+                                    <option value="" selected>skip</option>
+                                    <option value="A">Option A</option>
+                                    <option value="B">Option B</option>
+                                    <option value="C">Option C</option>
+                                    <option value="D">Option D</option>
+                                </select>
+                            </div>
+                            <div class="col-3">
+                                <span>Marks Allocated:</span>
+                                <input disabled type="number" name="marks" id="marks" class="form-control" placeholder="marks" value='1'>
+                            </div>
+                            <div class='col-3'>
+                                <span>Time remaining In Sec:</span>
+                                <input  disabled type="number" name="time" id="time" class="form-control" value='30'>
+                            </div>
+                        </div>
+                        <div class="row cell compartment" style="margin-top: 3rem;">
+                            <div class="col-6 ">
+                                <div >
+                                <button class="btn btn-success">Next</button>
+                                </div>
+                            </div>
+                            <div class="col-6 ">
+                                <div>
+                                <button class="btn btn-info">Submit Exam</button>
+                                </div>
+                            </div>
+                        </div>
+        
+                    </div>
+                    <div class="col-4 compartment cell" style="padding:5rem 0 5rem 0;">
+                    
+                    </div>
+                </div>
+            </div>
+    </div>
+   
+   
+
+<script type="text/javascript" src="exampagecontrol.js"></script>
+
+	
+</body>
+</html>
